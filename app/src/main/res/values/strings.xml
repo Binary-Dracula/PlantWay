@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">PlantWay</string>
+    <string name="slogan_en">Your Balcony Planting Guide</string>
+    <string name="slogan_cn">你的阳台生活指南</string>
+    <string name="hint_email_mobile">Email or Mobile Number</string>
+    <string name="hint_password">Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="btn_login">Log In</string>
+    <string name="btn_signup">Sign Up</string>
+    <string name="or_sign_up_with">or sign up with</string>
+    <string name="google_login">Google Login</string>
+    <string name="wechat_login">WeChat Login</string>
+    <string name="apple_login">Apple Login</string>
 </resources>
