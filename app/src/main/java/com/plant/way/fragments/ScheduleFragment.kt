@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import android.widget.ImageView
+import android.widget.LinearLayout
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.plant.way.R
 
@@ -15,12 +17,20 @@ class ScheduleFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = TextView(requireContext()).apply {
-            text = "Schedule Fragment"
-            textSize = 24f
-            gravity = android.view.Gravity.CENTER
+        return inflater.inflate(R.layout.fragment_schedule, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        
+        setupClickListeners(view)
+    }
+
+    private fun setupClickListeners(view: View) {
+        // Add plant button click listener
+        view.findViewById<ImageView>(R.id.iv_add).setOnClickListener {
+            Toast.makeText(requireContext(), "Add new plant to schedule", Toast.LENGTH_SHORT).show()
         }
-        return view
     }
 
     companion object {

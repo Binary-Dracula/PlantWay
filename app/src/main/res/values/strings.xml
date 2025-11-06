@@ -45,4 +45,28 @@
     <string name="community_price_30">¥30</string>
     <string name="community_price_16">¥16</string>
     <string name="community_seller_name">Alex</string>
+
+    <!-- Schedule Page -->
+    <string name="schedule_my_plants">My Plants</string>
+    <string name="schedule_temperature">10°C</string>
+    <string name="schedule_watering">Watering</string>
+    <string name="schedule_fertilizing">Fertilizing</string>
+    <string name="schedule_lemon">Lemon</string>
+    <string name="schedule_basil">Basil</string>
+    <string name="schedule_date_watering">2024.01.09</string>
+    <string name="schedule_date_fertilizing">2023.12.23</string>
+    <string name="schedule_mon">Mon.</string>
+    <string name="schedule_tue">Tue.</string>
+    <string name="schedule_wed">Wed.</string>
+    <string name="schedule_thu">Thu.</string>
+    <string name="schedule_fri">Fri.</string>
+    <string name="schedule_sat">Sat.</string>
+    <string name="schedule_sun">Sun.</string>
+    <string name="schedule_day_22">22</string>
+    <string name="schedule_day_23">23</string>
+    <string name="schedule_day_24">24</string>
+    <string name="schedule_day_25">25</string>
+    <string name="schedule_day_26">26</string>
+    <string name="schedule_day_27">27</string>
+    <string name="schedule_day_28">28</string>
 </resources>
