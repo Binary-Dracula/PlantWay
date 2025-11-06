@@ -21,7 +21,7 @@ class CustomBottomNavigationView @JvmOverloads constructor(
 
     init {
         orientation = HORIZONTAL
-        setBackgroundResource(R.drawable.navbar_bg)
+        setBackgroundResource(R.drawable.navi_bar)
         elevation = 8f
         setupTabs()
     }
@@ -56,7 +56,7 @@ class CustomBottomNavigationView @JvmOverloads constructor(
         }
 
         val icon = ImageView(context).apply {
-            layoutParams = LayoutParams(48, 48).apply {
+            layoutParams = LayoutParams(64, 64).apply {
                 gravity = android.view.Gravity.CENTER_HORIZONTAL
             }
             scaleType = ImageView.ScaleType.FIT_CENTER
@@ -68,10 +68,10 @@ class CustomBottomNavigationView @JvmOverloads constructor(
                 LayoutParams.WRAP_CONTENT
             ).apply {
                 gravity = android.view.Gravity.CENTER_HORIZONTAL
-                topMargin = 4
+                topMargin = 8
             }
             setText(data.textRes)
-            textSize = 11f
+            textSize = 14f
             gravity = android.view.Gravity.CENTER
         }
 
