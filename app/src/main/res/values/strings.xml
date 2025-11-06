@@ -2,6 +2,9 @@
     <string name="app_name">PlantWay</string>
     <string name="slogan_en">Your Balcony Planting Guide</string>
     <string name="slogan_cn">你的阳台生活指南</string>
+    <string name="welcome_slogan_1">Start your balcony life,</string>
+    <string name="welcome_slogan_2">share a green and healthy lifestyle</string>
+    <string name="btn_start_planting">Start planting</string>
     <string name="hint_email_mobile">Email or Mobile Number</string>
     <string name="hint_password">Password</string>
     <string name="forgot_password">Forgot Password</string>
@@ -11,4 +14,10 @@
     <string name="google_login">Google Login</string>
     <string name="wechat_login">WeChat Login</string>
     <string name="apple_login">Apple Login</string>
+
+    <!-- Bottom Navigation Titles -->
+    <string name="title_start">Start</string>
+    <string name="title_schedule">Schedule</string>
+    <string name="title_community">Community</string>
+    <string name="title_profile">Profile</string>
 </resources>
