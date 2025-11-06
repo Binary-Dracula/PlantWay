@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_gradient_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/community_header_text"
+                android:textColor="#006C37"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_add"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_add" />
+        </LinearLayout>
+        <!-- Items Grid -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- First Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+                <!-- Gardening Kit Card -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_background"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_tool_2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/community_gardening_kit"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/community_price_28"
+                            android:textColor="#333333"
+                            android:textSize="32sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/small_circle_background"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/avatar" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:text="@string/community_seller_name"
+                            android:textColor="#999999"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Garden Shears Card -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_background"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_tool_4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/community_garden_shears"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/community_price_9_9"
+                            android:textColor="#333333"
+                            android:textSize="32sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/small_circle_background"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/avatar" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:text="@string/community_seller_name"
+                            android:textColor="#999999"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Second Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!-- Dendrobium Card -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_background"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_tool_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/community_dendrobium"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/community_price_30"
+                            android:textColor="#333333"
+                            android:textSize="32sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/small_circle_background"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/avatar" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:text="@string/community_seller_name"
+                            android:textColor="#999999"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- China Rose Card -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_background"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_tool_3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/community_china_rose"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/community_price_16"
+                            android:textColor="#333333"
+                            android:textSize="32sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/small_circle_background"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/avatar" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:text="@string/community_seller_name"
+                            android:textColor="#999999"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

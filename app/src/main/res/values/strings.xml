@@ -33,4 +33,16 @@
     <string name="profile_account">Account</string>
     <string name="profile_logout">Logout</string>
     <string name="profile_delete_account">Delete Account</string>
+
+    <!-- Community Page -->
+    <string name="community_header_text">You can trade unwanted items\nand plants here.</string>
+    <string name="community_gardening_kit">Gardening kit</string>
+    <string name="community_garden_shears">Garden shears</string>
+    <string name="community_dendrobium">Dendrobium catenatum</string>
+    <string name="community_china_rose">China rose</string>
+    <string name="community_price_28">¥28</string>
+    <string name="community_price_9_9">¥9.9</string>
+    <string name="community_price_30">¥30</string>
+    <string name="community_price_16">¥16</string>
+    <string name="community_seller_name">Alex</string>
 </resources>
