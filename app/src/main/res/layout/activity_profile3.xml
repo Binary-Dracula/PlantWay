@@ -33,6 +33,7 @@
 
     <!-- Product Card -->
     <LinearLayout
+        android:id="@+id/ll_product_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/iv_back"
@@ -45,7 +46,9 @@
         android:paddingStart="6dp"
         android:paddingTop="6dp"
         android:paddingEnd="16dp"
-        android:paddingBottom="8dp">
+        android:paddingBottom="8dp"
+        android:clickable="true"
+        android:focusable="true">
 
         <!-- Product Image -->
         <com.rishabhharit.roundedimageview.RoundedImageView

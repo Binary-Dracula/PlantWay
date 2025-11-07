@@ -87,4 +87,13 @@
     <string name="profile3_name">China rose</string>
     <string name="profile3_price">¥16</string>
 
+    <!-- Profile4 Page -->
+    <string name="profile4_product_name">China rose</string>
+    <string name="profile4_seller_name">Skyler</string>
+    <string name="profile4_price">¥16</string>
+    <string name="profile4_description">Shipped with flower buds, only 16 yuan.\nGrown on my own balcony; as long as there\'s good ventilation, even an enclosed balcony can grow it.\nBlooms year-round in suitable temperatures, producing a huge quantity of flowers with an intoxicating fragrance.</string>
+    <string name="profile4_date">01-02</string>
+    <string name="profile4_delete_button">Delete this product</string>
+    <string name="profile4_edit_button">Edit product description</string>
+
 </resources>
