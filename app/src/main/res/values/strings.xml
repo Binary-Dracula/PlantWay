@@ -108,4 +108,9 @@
     <string name="community2_description_hint">Description</string>
     <string name="community2_ok_button">OK</string>
 
+    <!-- Schedule3 Page -->
+    <string name="schedule3_add_plants">Add plants</string>
+    <string name="schedule3_plant_name_hint">Plant name</string>
+    <string name="schedule3_ok_button">OK</string>
+
 </resources>
