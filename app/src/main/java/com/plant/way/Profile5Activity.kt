@@ -1,5 +1,6 @@
 package com.plant.way
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.LinearLayout
@@ -21,9 +22,9 @@ class Profile5Activity : AppCompatActivity() {
             finish()
         }
         
-        // Add button click listener
+        // Add button click listener - navigate to Community2Activity
         findViewById<ImageView>(R.id.iv_add).setOnClickListener {
-            Toast.makeText(this, "Add new message", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, Community2Activity::class.java))
         }
         
         // Message item click listener
