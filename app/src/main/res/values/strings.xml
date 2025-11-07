@@ -96,4 +96,9 @@
     <string name="profile4_delete_button">Delete this product</string>
     <string name="profile4_edit_button">Edit product description</string>
 
+    <!-- Profile5 Page -->
+    <string name="profile5_message_sender">SASA</string>
+    <string name="profile5_message_text">Yes, do you want it?</string>
+    <string name="profile5_message_date">01-02</string>
+
 </resources>
