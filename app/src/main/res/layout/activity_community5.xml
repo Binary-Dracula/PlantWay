@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_gradient_background">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:id="@+id/ll_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_back"
+            android:padding="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+        <!-- User Info -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="8dp">
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/avatar_sasa"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_background"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/tv_seller_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/community5_seller_name"
+                android:textSize="16sp"
+                android:textColor="#999999" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Chat Messages -->
+    <ScrollView
+        android:id="@+id/sv_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_top_bar"
+        android:layout_above="@id/ll_input_bar"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Product Info Card -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/img_tool_2"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="12dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="bottom"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/community5_price"
+                        android:textSize="20sp"
+                        android:textColor="#FF6B35"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Date -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/community5_date"
+                android:textSize="12sp"
+                android:textColor="#CCCCCC"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Buyer Message (Right) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/community5_message_buyer"
+                    android:textSize="14sp"
+                    android:textColor="#333333"
+                    android:background="@drawable/chat_bubble_right"
+                    android:maxWidth="250dp"
+                    android:layout_marginEnd="8dp" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/avatar"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/small_circle_background" />
+
+            </LinearLayout>
+
+            <!-- Seller Message (Left) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="start"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/avatar_sasa"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/small_circle_background"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/community5_message_seller"
+                    android:textSize="14sp"
+                    android:textColor="#333333"
+                    android:background="@drawable/chat_bubble_left"
+                    android:maxWidth="250dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Input Bar -->
+    <LinearLayout
+        android:id="@+id/ll_input_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp"
+        android:background="#FFFFFF">
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/community5_input_hint"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:textColorHint="#CCCCCC"
+            android:background="@drawable/chat_input_background"
+            android:minHeight="48dp"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+</RelativeLayout>

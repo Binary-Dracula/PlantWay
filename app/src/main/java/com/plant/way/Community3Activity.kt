@@ -1,5 +1,6 @@
 package com.plant.way
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -71,7 +72,7 @@ class Community3Activity : AppCompatActivity() {
         
         // Talk to seller button click listener
         findViewById<TextView>(R.id.btn_talk).setOnClickListener {
-            Toast.makeText(this, "Opening chat with seller", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, Community5Activity::class.java))
         }
     }
     

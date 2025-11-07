@@ -123,4 +123,12 @@
     <string name="community3_like_count">1</string>
     <string name="community3_favorite_count">1</string>
 
+    <!-- Community5 Page -->
+    <string name="community5_seller_name">SASA</string>
+    <string name="community5_price">¥28.00</string>
+    <string name="community5_date">01-21</string>
+    <string name="community5_message_buyer">Hello, is your item still there?</string>
+    <string name="community5_message_seller">Yes, do you want it?</string>
+    <string name="community5_input_hint">Talk to the seller</string>
+
 </resources>
