@@ -77,4 +77,9 @@
     <string name="start_card_2_title">How to choose\nthe right tools?</string>
     <string name="start_card_3_title">How to plan your\nbalcony space?</string>
     <string name="start_learn_more">learn more ></string>
+
+    <!-- Profile2 Page -->
+    <string name="profile2_gardening_kit">Gardening kit</string>
+    <string name="profile2_seller_name">SASA</string>
+    <string name="profile2_price">¥28</string>
 </resources>

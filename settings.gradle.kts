@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "PlantWay"
 include(":app")
+include(":roundedimageview")
