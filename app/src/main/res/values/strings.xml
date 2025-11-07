@@ -82,4 +82,9 @@
     <string name="profile2_gardening_kit">Gardening kit</string>
     <string name="profile2_seller_name">SASA</string>
     <string name="profile2_price">¥28</string>
+
+    <!-- Profile3 Page -->
+    <string name="profile3_name">China rose</string>
+    <string name="profile3_price">¥16</string>
+
 </resources>

@@ -18,6 +18,19 @@
         android:padding="12dp"
         android:src="@drawable/ic_back" />
 
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="12dp"
+        android:src="@drawable/ic_add" />
+
     <!-- Product Card -->
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,9 +53,9 @@
             android:layout_width="140dp"
             android:layout_height="match_parent"
             android:layout_marginEnd="16dp"
-            app:cornerRadius="8dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/img_tool_2" />
+            android:src="@drawable/img_tool_3"
+            app:cornerRadius="8dp" />
 
         <!-- Product Info -->
         <LinearLayout
@@ -57,7 +70,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
-                android:text="@string/profile2_gardening_kit"
+                android:text="@string/profile3_name"
                 android:textColor="#333333"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -82,15 +95,14 @@
                         android:layout_width="32dp"
                         android:layout_height="32dp"
                         android:layout_marginEnd="8dp"
-                        android:background="@drawable/small_circle_background"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/avatar_sasa" />
+                        android:src="@drawable/avatar" />
 
                     <TextView
                         android:id="@+id/tv_seller_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/profile2_seller_name"
+                        android:text="@string/profile_name"
                         android:textColor="#999999"
                         android:textSize="14sp" />
 
@@ -101,7 +113,7 @@
                     android:id="@+id/tv_price"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/profile2_price"
+                    android:text="@string/profile3_price"
                     android:textColor="#333333"
                     android:textSize="24sp"
                     android:textStyle="bold" />

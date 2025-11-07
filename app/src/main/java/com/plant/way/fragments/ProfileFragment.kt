@@ -9,6 +9,7 @@ import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.plant.way.Profile2Activity
+import com.plant.way.Profile3Activity
 import com.plant.way.R
 
 class ProfileFragment : Fragment() {
@@ -34,7 +35,7 @@ class ProfileFragment : Fragment() {
         }
 
         view.findViewById<LinearLayout>(R.id.ll_sale).setOnClickListener {
-            Toast.makeText(requireContext(), "Sale clicked", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(requireActivity(), Profile3Activity::class.java))
         }
 
         view.findViewById<LinearLayout>(R.id.ll_message).setOnClickListener {
