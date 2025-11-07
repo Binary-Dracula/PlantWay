@@ -113,4 +113,14 @@
     <string name="schedule3_plant_name_hint">Plant name</string>
     <string name="schedule3_ok_button">OK</string>
 
+    <!-- Community3 Page -->
+    <string name="community3_seller_name">SASA</string>
+    <string name="community3_product_name">Gardening kit</string>
+    <string name="community3_price">¥28</string>
+    <string name="community3_description">Gardening kit, made of stainless steel with orange wooden handles. The set includes a small shovel, hoe, and rake; all are exquisitely crafted and comfortable to hold.\nSuitable for home gardening. The shovel and hoe feature a curved design for easy handling. The handles are sturdy and durable, featuring the brand logo.</string>
+    <string name="community3_date">01-02</string>
+    <string name="community3_talk_button">Talk to the seller</string>
+    <string name="community3_like_count">1</string>
+    <string name="community3_favorite_count">1</string>
+
 </resources>

@@ -48,6 +48,9 @@
         <activity
             android:name=".Schedule3Activity"
             android:exported="false" />
+        <activity
+            android:name=".Community3Activity"
+            android:exported="false" />
     </application>
 
 </manifest>

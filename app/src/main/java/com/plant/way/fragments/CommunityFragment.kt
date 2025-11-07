@@ -6,8 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
 import com.plant.way.Community2Activity
+import com.plant.way.Community3Activity
 import com.plant.way.R
 
 class CommunityFragment : Fragment() {
@@ -30,6 +32,11 @@ class CommunityFragment : Fragment() {
         // Add button click listener
         view.findViewById<ImageView>(R.id.iv_add).setOnClickListener {
             startActivity(Intent(requireActivity(), Community2Activity::class.java))
+        }
+        
+        // Gardening kit card click listener
+        view.findViewById<LinearLayout>(R.id.ll_card_gardening_kit).setOnClickListener {
+            startActivity(Intent(requireActivity(), Community3Activity::class.java))
         }
     }
 
