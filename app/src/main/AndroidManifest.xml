@@ -54,6 +54,9 @@
         <activity
             android:name=".Community5Activity"
             android:exported="false" />
+        <activity
+            android:name=".Schedule9Activity"
+            android:exported="false" />
     </application>
 
 </manifest>

@@ -132,4 +132,10 @@
     <string name="community5_message_seller">Yes, do you want it?</string>
     <string name="community5_input_hint">Talk to the seller</string>
 
+    <!-- Schedule9 Page -->
+    <string name="schedule9_join_time">Join time</string>
+    <string name="schedule9_date">2023 12 01</string>
+    <string name="schedule9_lemon">Lemon</string>
+    <string name="schedule9_basil">Basil</string>
+
 </resources>

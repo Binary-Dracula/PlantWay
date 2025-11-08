@@ -6,9 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
 import com.plant.way.R
 import com.plant.way.Schedule3Activity
+import com.plant.way.Schedule9Activity
 
 class ScheduleFragment : Fragment() {
 
@@ -30,6 +32,11 @@ class ScheduleFragment : Fragment() {
         // Add plant button click listener
         view.findViewById<ImageView>(R.id.iv_add).setOnClickListener {
             startActivity(Intent(requireActivity(), Schedule3Activity::class.java))
+        }
+        
+        // Lemon task item click listener
+        view.findViewById<LinearLayout>(R.id.ll_task_lemon)?.setOnClickListener {
+            startActivity(Intent(requireActivity(), Schedule9Activity::class.java))
         }
     }
 
