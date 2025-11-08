@@ -4,12 +4,13 @@ import android.os.Bundle
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.RelativeLayout
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class Schedule3Activity : AppCompatActivity() {
     
-    private lateinit var etPlantName: EditText
+    private lateinit var etPlantName: TextView
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,7 +34,7 @@ class Schedule3Activity : AppCompatActivity() {
         }
         
         // OK button click listener
-        findViewById<ImageView>(R.id.iv_ok_button).setOnClickListener {
+        findViewById<TextView>(R.id.iv_ok_button).setOnClickListener {
             val plantName = etPlantName.text.toString()
             
             if (plantName.isEmpty()) {

@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/profile_gradient_background">
+    android:background="@drawable/bg_main_tab">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="4dp"
+            android:text="View and set your\nbasic information."
+            android:textColor="#006C37"
+            android:textSize="18sp" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/bg_start"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:paddingHorizontal="18dp"
+        android:paddingTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top">
         <!-- Profile Header -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,9 +56,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/profile_name"
-                android:textColor="#333333"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textColor="#000000"
+                android:textSize="24sp" />
         </LinearLayout>
         <!-- Action Buttons -->
         <LinearLayout
@@ -49,7 +72,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_weight="1"
-                android:background="@drawable/profile_card_background"
+                android:background="@drawable/bg_profile_item"
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center"
@@ -78,7 +101,7 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginEnd="4dp"
                 android:layout_weight="1"
-                android:background="@drawable/profile_card_background"
+                android:background="@drawable/bg_profile_item"
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center"
@@ -106,7 +129,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
-                android:background="@drawable/profile_card_background"
+                android:background="@drawable/bg_profile_item"
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center"
@@ -137,10 +160,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="4dp"
                 android:text="@string/profile_personal_info"
-                android:textColor="#999999"
-                android:textSize="14sp" />
+                android:textColor="#B7B4B4"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#DADADA" />
             <!-- Change Name -->
             <LinearLayout
                 android:id="@+id/ll_change_name"
@@ -150,15 +179,14 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="16dp">
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/profile_change_name"
-                    android:textColor="#333333"
+                    android:textColor="#B7B4B4"
                     android:textSize="16sp" />
 
                 <TextView
@@ -168,6 +196,11 @@
                     android:textColor="#CCCCCC"
                     android:textSize="24sp" />
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#DADADA" />
             <!-- Privacy and Security -->
             <LinearLayout
                 android:id="@+id/ll_privacy"
@@ -177,15 +210,14 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="16dp">
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/profile_privacy_security"
-                    android:textColor="#333333"
+                    android:textColor="#B7B4B4"
                     android:textSize="16sp" />
 
                 <TextView
@@ -195,6 +227,11 @@
                     android:textColor="#CCCCCC"
                     android:textSize="24sp" />
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#DADADA" />
             <!-- Notifications -->
             <LinearLayout
                 android:id="@+id/ll_notifications"
@@ -204,15 +241,14 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="16dp">
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/profile_notifications"
-                    android:textColor="#333333"
+                    android:textColor="#B7B4B4"
                     android:textSize="16sp" />
 
                 <TextView
@@ -222,15 +258,26 @@
                     android:textColor="#CCCCCC"
                     android:textSize="24sp" />
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#DADADA" />
             <!-- Account Header -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="4dp"
                 android:text="@string/profile_account"
-                android:textColor="#999999"
-                android:textSize="14sp" />
+                android:textColor="#B7B4B4"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#DADADA" />
             <!-- Logout -->
             <LinearLayout
                 android:id="@+id/ll_logout"
@@ -240,15 +287,14 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="16dp">
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/profile_logout"
-                    android:textColor="#333333"
+                    android:textColor="#B7B4B4"
                     android:textSize="16sp" />
 
                 <TextView
@@ -258,6 +304,11 @@
                     android:textColor="#CCCCCC"
                     android:textSize="24sp" />
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#DADADA" />
             <!-- Delete Account -->
             <LinearLayout
                 android:id="@+id/ll_delete_account"
@@ -267,15 +318,14 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="16dp">
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/profile_delete_account"
-                    android:textColor="#333333"
+                    android:textColor="#B7B4B4"
                     android:textSize="16sp" />
 
                 <TextView
@@ -285,6 +335,11 @@
                     android:textColor="#CCCCCC"
                     android:textSize="24sp" />
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#DADADA" />
         </LinearLayout>
     </LinearLayout>
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

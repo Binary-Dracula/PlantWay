@@ -27,7 +27,7 @@
     <string name="profile_favorites">Favorites</string>
     <string name="profile_sale">Sale</string>
     <string name="profile_message">Message</string>
-    <string name="profile_personal_info">personal information</string>
+    <string name="profile_personal_info">Personal information</string>
     <string name="profile_change_name">Change name</string>
     <string name="profile_privacy_security">Privacy and Security</string>
     <string name="profile_notifications">Notifications and Sounds</string>
@@ -37,14 +37,15 @@
 
     <!-- Community Page -->
     <string name="community_header_text">You can trade unwanted items\nand plants here.</string>
-    <string name="community_gardening_kit">Gardening kit</string>
-    <string name="community_garden_shears">Garden shears</string>
-    <string name="community_dendrobium">Dendrobium catenatum</string>
-    <string name="community_china_rose">China rose</string>
-    <string name="community_price_28">¥28</string>
-    <string name="community_price_9_9">¥9.9</string>
-    <string name="community_price_30">¥30</string>
-    <string name="community_price_16">¥16</string>
+    <string name="community_gardening_kit">Gardening kit\n</string>
+    <string name="community_garden_shears">Garden shears\n</string>
+    <string name="community_dendrobium">Dendrobium catenatum\nPotted plants</string>
+    <string name="community_china_rose">China rose\n</string>
+    <string name="community_unit">¥</string>
+    <string name="community_price_28">28</string>
+    <string name="community_price_9_9">9.9</string>
+    <string name="community_price_30">30</string>
+    <string name="community_price_16">16</string>
     <string name="community_seller_name">Alex</string>
 
     <!-- Schedule Page -->
@@ -81,16 +82,16 @@
     <!-- Profile2 Page -->
     <string name="profile2_gardening_kit">Gardening kit</string>
     <string name="profile2_seller_name">SASA</string>
-    <string name="profile2_price">¥28</string>
+    <string name="profile2_price">28</string>
 
     <!-- Profile3 Page -->
     <string name="profile3_name">China rose</string>
-    <string name="profile3_price">¥16</string>
+    <string name="profile3_price">16</string>
 
     <!-- Profile4 Page -->
     <string name="profile4_product_name">China rose</string>
     <string name="profile4_seller_name">Skyler</string>
-    <string name="profile4_price">¥16</string>
+    <string name="profile4_price">16</string>
     <string name="profile4_description">Shipped with flower buds, only 16 yuan.\nGrown on my own balcony; as long as there\'s good ventilation, even an enclosed balcony can grow it.\nBlooms year-round in suitable temperatures, producing a huge quantity of flowers with an intoxicating fragrance.</string>
     <string name="profile4_date">01-02</string>
     <string name="profile4_delete_button">Delete this product</string>
