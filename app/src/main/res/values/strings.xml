@@ -138,4 +138,12 @@
     <string name="schedule9_lemon">Lemon</string>
     <string name="schedule9_basil">Basil</string>
 
+    <!-- Schedule7 Page -->
+    <string name="schedule7_lemon">lemon</string>
+    <string name="schedule7_watering">Watering</string>
+    <string name="schedule7_fertilizing">Fertilizing</string>
+    <string name="schedule7_pruning">Pruning</string>
+    <string name="schedule7_pest_control">Pest control</string>
+    <string name="schedule7_date">2024 01 09</string>
+
 </resources>

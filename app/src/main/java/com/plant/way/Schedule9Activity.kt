@@ -29,7 +29,7 @@ class Schedule9Activity : AppCompatActivity() {
         
         // Lemon item click listener
         findViewById<LinearLayout>(R.id.ll_item_lemon).setOnClickListener {
-            Toast.makeText(this, "Lemon plant details", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, Schedule7Activity::class.java))
         }
         
         // Basil item click listener
