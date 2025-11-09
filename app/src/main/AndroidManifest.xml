@@ -69,6 +69,9 @@
         <activity
             android:name=".Start17Activity"
             android:exported="false" />
+        <activity
+            android:name=".Start15Activity"
+            android:exported="false" />
     </application>
 
 </manifest>
