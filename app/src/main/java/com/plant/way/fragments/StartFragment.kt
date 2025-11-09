@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.plant.way.R
 import com.plant.way.Start21Activity
+import com.plant.way.Start17Activity
 
 class StartFragment : Fragment() {
 
@@ -35,7 +36,7 @@ class StartFragment : Fragment() {
         
         // Card 2 click listener
         view.findViewById<LinearLayout>(R.id.ll_card_2).setOnClickListener {
-            Toast.makeText(requireContext(), "How to choose the right tools?", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(requireContext(), Start17Activity::class.java))
         }
         
         // Card 3 click listener

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Top Image -->
+    <ImageView
+        android:id="@+id/topImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_start_17_top"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="12dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/white_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-50dp"
+        android:src="@drawable/bg_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topImage" />
+
+    <!-- Button Container -->
+    <GridLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:columnCount="2"
+        android:rowCount="1"
+        app:layout_constraintTop_toTopOf="@+id/white_bg">
+
+        <!-- Button 1 -->
+        <TextView
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/bg_start_21_selected"
+            android:gravity="center"
+            android:text="Gardening tools"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Button 2 -->
+        <TextView
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="@drawable/bg_start_21_unselected"
+            android:gravity="center"
+            android:text="Flower pots"
+            android:textColor="#56E4D3"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </GridLayout>
+
+    <!-- Items Container -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bg"
+        app:layout_constraintTop_toBottomOf="@+id/buttonContainer">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/content1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Tool Image -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_start17_tool1" />
+
+                <!-- Title -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="I. Essential Basic Tools List"
+                    android:textColor="#B7B4B4"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- Tool 1: Pruning Tools -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="1. Pruning Tools"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Pruning Shears (Gardening Shears)"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Uses: Pruning branches, removing dead leaves, shaping plants."
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Selection Points: Choose stainless steel (rust-resistant materials), sharp blades with a tight seal, and a comfortable grip."
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <!-- Tool 2: Soil Turning Tools -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="2. Soil Turning Tools"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Small Shovel (Gardening Shovel)"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Uses: Transplanting seedlings, digging, filling soil."
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Selection Points: Shovel head width around 8-10cm, handle length around 30cm, metal material is more durable."
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Small Rake"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Uses: Loosening soil, clearing weeds, leveling the soil surface."
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Selection Points: Moderate tooth spacing, lightweight handle."
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <!-- Tool 3: Watering Tools -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="3. Watering Tools"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Long-Spout Watering Can"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Uses: Precise watering, avoiding wetting leaves (some plants are sensitive to waterlogging)."
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Selection Points: Long, narrow spout, capacity 1-2L (suitable for small areas). Sprayer Bottle (Aerosol Bottle)"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Uses: Spraying leaves, regulating humidity, applying liquid fertilizer."
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Selection Points: Good atomization effect; pressurized sprayers are more convenient."
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/content2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Flower Pots"
+                    android:textColor="#B7B4B4"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- Description -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Flower Pots: Beginners should choose flower pots with good breathability, such as terracotta or wooden pots. Plastic and ceramic pots have poor breathability. Larger pots aren't necessarily better; generally, the pot diameter should be about 5cm larger than the plant's crown width. Deep pots are suitable for plants with well-developed root systems, while shallow pots suit the opposite."
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Drainage holes are essential. Regardless of the type of pot, it's best to choose one with drainage holes. If the pot doesn't have drainage holes, you can use expanded clay pebbles to elevate it."
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <!-- Pot Image 1 -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_start17_tool2" />
+
+                <!-- Plastic Flower Pots -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Plastic Flower Pots"
+                    android:textColor="#B7B4B4"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Advantages: Lightweight and easy to move. Highly adaptable to various appearances, inexpensive, and beginner-friendly."
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Disadvantages: Poor breathability and drainage; overwatering can easily cause root rot. Prone to cracking and aging from wind and sun exposure, resulting in a shorter lifespan."
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <!-- Pot Image 2 -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_start17_tool3" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_pop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:background="@drawable/bg_start17_pop"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_start17_pop1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_start17_pop2" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bottom_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-2dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginBottom="-10dp"
+        android:src="@drawable/bg_start_17_bottom"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/joinGardenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/green_add_button_background"
+        android:gravity="center"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="8dp"
+        android:text="Product Recommendations"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
