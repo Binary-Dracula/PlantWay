@@ -25,7 +25,9 @@
         android:clickable="true"
         android:focusable="true"
         android:padding="12dp"
-        android:src="@drawable/ic_back" />
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/white_bg"
