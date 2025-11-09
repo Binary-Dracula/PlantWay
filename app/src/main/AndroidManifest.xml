@@ -63,6 +63,9 @@
         <activity
             android:name=".Start21Activity"
             android:exported="false" />
+        <activity
+            android:name=".Start22Activity"
+            android:exported="false" />
     </application>
 
 </manifest>

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Top Image -->
+        <ImageView
+            android:id="@+id/topImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/start22_top1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="12dp"
+            android:src="@drawable/ic_back_white" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="-20dp"
+            android:src="@drawable/bg_start"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topImage" />
+
+        <!-- Plant Name -->
+        <TextView
+            android:id="@+id/plantName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topImage" />
+
+        <!-- Divider 1 -->
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#DADADA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/plantName" />
+
+        <!-- Watering Icon -->
+        <ImageView
+            android:id="@+id/wateringIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_schedule_7_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider1" />
+
+        <!-- Watering Title -->
+        <TextView
+            android:id="@+id/wateringTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Watering"
+            android:textColor="#B7B4B4"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/wateringIcon"
+            app:layout_constraintStart_toEndOf="@id/wateringIcon" />
+
+        <!-- Watering Text -->
+        <TextView
+            android:id="@+id/wateringText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/wateringIcon" />
+
+        <!-- Divider 2 -->
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#DADADA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/wateringText" />
+
+        <!-- Fertilizing Icon -->
+        <ImageView
+            android:id="@+id/fertilizingIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_schedule_7_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+        <!-- Fertilizing Title -->
+        <TextView
+            android:id="@+id/fertilizingTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Fertilizing"
+            android:textColor="#B7B4B4"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/fertilizingIcon"
+            app:layout_constraintStart_toEndOf="@id/fertilizingIcon" />
+
+        <!-- Fertilizing Text -->
+        <TextView
+            android:id="@+id/fertilizingText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fertilizingIcon" />
+
+        <!-- Divider 3 -->
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#DADADA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fertilizingText" />
+
+        <!-- Pruning Icon -->
+        <ImageView
+            android:id="@+id/pruningIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_schedule_7_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider3" />
+
+        <!-- Pruning Title -->
+        <TextView
+            android:id="@+id/pruningTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Pruning"
+            android:textColor="#B7B4B4"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/pruningIcon"
+            app:layout_constraintStart_toEndOf="@id/pruningIcon" />
+
+        <!-- Pruning Text -->
+        <TextView
+            android:id="@+id/pruningText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pruningIcon" />
+
+        <!-- Divider 4 -->
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#DADADA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pruningText" />
+
+        <!-- Pest and Disease Prevention Icon -->
+        <ImageView
+            android:id="@+id/pestIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_schedule_7_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider4" />
+
+        <!-- Pest and Disease Prevention Title -->
+        <TextView
+            android:id="@+id/pestTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Pest and Disease Prevention"
+            android:textColor="#B7B4B4"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/pestIcon"
+            app:layout_constraintStart_toEndOf="@id/pestIcon" />
+
+        <!-- Pest and Disease Prevention Text -->
+        <TextView
+            android:id="@+id/pestAndDiseaseText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pestIcon" />
+
+        <!-- Divider 5 -->
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#DADADA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pestAndDiseaseText" />
+
+        <!-- Light and Temperature Icon -->
+        <ImageView
+            android:id="@+id/lightIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_schedule_7_5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider5" />
+
+        <!-- Light and Temperature Title -->
+        <TextView
+            android:id="@+id/lightTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Light and Temperature"
+            android:textColor="#B7B4B4"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/lightIcon"
+            app:layout_constraintStart_toEndOf="@id/lightIcon" />
+
+        <!-- Soil Requirements Icon -->
+        <ImageView
+            android:id="@+id/soilIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/ic_schedule_7_6"
+            app:layout_constraintBottom_toBottomOf="@id/lightIcon"
+            app:layout_constraintStart_toEndOf="@id/lightTitle"
+            app:layout_constraintTop_toTopOf="@id/lightIcon" />
+
+        <!-- Soil Requirements Title -->
+        <TextView
+            android:id="@+id/soilTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Soil Requirements"
+            android:textColor="#B7B4B4"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/soilIcon"
+            app:layout_constraintStart_toEndOf="@id/soilIcon" />
+
+        <!-- Light and Temperature Text -->
+        <TextView
+            android:id="@+id/lightAndTemperatureText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:lineSpacingExtra="2dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lightIcon" />
+
+        <!-- Guideline for 50% split -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <!-- Soil Requirements Text -->
+        <TextView
+            android:id="@+id/soilRequirementsText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:lineSpacingExtra="2dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/soilIcon" />
+
+        <!-- Join the garden Button -->
+        <TextView
+            android:id="@+id/joinGardenButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/green_add_button_background"
+            android:gravity="center"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp"
+            android:text="Join the garden"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lightAndTemperatureText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
