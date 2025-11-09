@@ -102,8 +102,7 @@
                     android:layout_height="wrap_content"
                     android:text="Utilizing Wall Space: Plants on walls, leaving floor space."
                     android:textColor="#000000"
-                    android:textSize="13sp"
-                    android:textStyle="bold" />
+                    android:textSize="13sp" />
 
                 <!-- Description 2 -->
                 <TextView

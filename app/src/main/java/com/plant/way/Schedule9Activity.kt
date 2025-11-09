@@ -34,7 +34,7 @@ class Schedule9Activity : AppCompatActivity() {
         
         // Basil item click listener
         findViewById<LinearLayout>(R.id.ll_item_basil).setOnClickListener {
-            Toast.makeText(this, "Basil plant details", Toast.LENGTH_SHORT).show()
+
         }
     }
 }
