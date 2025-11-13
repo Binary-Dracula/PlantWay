@@ -42,11 +42,11 @@ class PlantTaskAdapter(
                     tvTaskType.text = itemView.context.getString(R.string.schedule_fertilizing)
                 }
                 TaskType.PRUNING -> {
-                    ivTaskIcon.setImageResource(R.drawable.ic_tool_1)
+                    ivTaskIcon.setImageResource(R.drawable.ic_schedule_7_3)
                     tvTaskType.text = "Pruning"
                 }
                 TaskType.REPOTTING -> {
-                    ivTaskIcon.setImageResource(R.drawable.ic_tool_2)
+                    ivTaskIcon.setImageResource(R.drawable.ic_schedule_7_4)
                     tvTaskType.text = "Repotting"
                 }
             }
