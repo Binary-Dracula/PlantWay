@@ -31,8 +31,9 @@
         android:background="@drawable/bg_start"
         android:orientation="vertical"
         android:paddingTop="16dp">
-        <!-- Lemon Title -->
+        <!-- Plant Name Title -->
         <TextView
+            android:id="@+id/tv_plant_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
