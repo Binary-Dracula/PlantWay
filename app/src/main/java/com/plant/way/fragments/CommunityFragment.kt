@@ -46,8 +46,10 @@ class CommunityFragment : Fragment() {
         recyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
         
         adapter = CommunityAdapter(CommunityDataManager.getCommunityList()) { item ->
-            // 点击item跳转到详情页
-            startActivity(Intent(requireActivity(), Community3Activity::class.java))
+            // 点击item跳转到详情页，传递item ID
+            val intent = Intent(requireActivity(), Community3Activity::class.java)
+            intent.putExtra("ITEM_ID", item.id)
+            startActivity(intent)
         }
         recyclerView.adapter = adapter
     }

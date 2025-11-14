@@ -49,8 +49,10 @@ class Profile3Activity : AppCompatActivity() {
         adapter = ProfileCommunityAdapter(
             items = CommunityDataManager.getUserAddedItems(),
             onItemClick = { item ->
-                // 点击item跳转到详情页
-                startActivity(Intent(this, Profile4Activity::class.java))
+                // 点击item跳转到详情页，传递item ID
+                val intent = Intent(this, Community3Activity::class.java)
+                intent.putExtra("ITEM_ID", item.id)
+                startActivity(intent)
             },
             onItemLongClick = { item ->
                 showDeleteConfirmation(item)
