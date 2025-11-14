@@ -23,11 +23,11 @@ class Community3Activity : AppCompatActivity() {
     private lateinit var tvPrice: TextView
     private lateinit var tvDescription: TextView
     private lateinit var ivAvatar: ImageView
+    private lateinit var ivFavorite: ImageView
     
     private var likeCount = 1
     private var favoriteCount = 1
     private var isLiked = false
-    private var isFavorited = false
     private var currentItem: CommunityItem? = null
     
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,6 +54,7 @@ class Community3Activity : AppCompatActivity() {
         tvPrice = findViewById(R.id.tv_price)
         tvDescription = findViewById(R.id.tv_description)
         ivAvatar = findViewById(R.id.iv_avatar)
+        ivFavorite = findViewById(R.id.iv_favorite)
         
         // Display item data
         currentItem?.let { item ->
@@ -94,23 +95,47 @@ class Community3Activity : AppCompatActivity() {
             tvLikeCount.text = likeCount.toString()
         }
         
+        // 初始化收藏状态
+        updateFavoriteIcon()
+        
         // Favorite button click listener
         findViewById<LinearLayout>(R.id.ll_favorite).setOnClickListener {
-            isFavorited = !isFavorited
-            if (isFavorited) {
-                favoriteCount++
-                Toast.makeText(this, "Added to favorites", Toast.LENGTH_SHORT).show()
-            } else {
-                favoriteCount--
-                Toast.makeText(this, "Removed from favorites", Toast.LENGTH_SHORT).show()
+            currentItem?.let { item ->
+                if (CommunityDataManager.isFavorite(item.id)) {
+                    // 已收藏，取消收藏
+                    CommunityDataManager.removeFromFavorite(item.id)
+                    Toast.makeText(this, "Removed from favorites", Toast.LENGTH_SHORT).show()
+                } else {
+                    // 未收藏，添加收藏
+                    CommunityDataManager.addToFavorite(item)
+                    Toast.makeText(this, "Added to favorites", Toast.LENGTH_SHORT).show()
+                }
+                updateFavoriteIcon()
             }
-            tvFavoriteCount.text = favoriteCount.toString()
         }
         
         // Talk to seller button click listener
         findViewById<TextView>(R.id.btn_talk).setOnClickListener {
             startActivity(Intent(this, Community5Activity::class.java))
         }
+    }
+    
+    private fun updateFavoriteIcon() {
+        currentItem?.let { item ->
+            if (CommunityDataManager.isFavorite(item.id)) {
+                // 已收藏，显示实心图标
+                ivFavorite.setImageResource(R.drawable.ic_favorite)
+            } else {
+                // 未收藏，显示空心图标
+                ivFavorite.setImageResource(R.drawable.ic_unfavorite)
+            }
+        }
+    }
+    
+    override fun onResume() {
+        super.onResume()
+        // 每次返回时更新收藏状态
+        updateFavoriteIcon()
     }
     
     // ViewPager Adapter
