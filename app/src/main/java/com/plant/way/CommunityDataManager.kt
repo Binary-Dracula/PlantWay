@@ -70,7 +70,7 @@ object CommunityDataManager {
                 imageResId = R.drawable.img_tool_3,
                 sellerName = "Olivia",
                 sellerAvatar = R.drawable.avatar,
-                isUserAdded = false
+                isUserAdded = true
             )
         )
     }
