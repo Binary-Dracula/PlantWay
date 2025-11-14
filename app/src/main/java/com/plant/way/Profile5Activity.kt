@@ -27,9 +27,9 @@ class Profile5Activity : AppCompatActivity() {
             startActivity(Intent(this, Community2Activity::class.java))
         }
         
-        // Message item click listener
+        // Message item click listener - navigate to Community5Activity
         findViewById<LinearLayout>(R.id.ll_message_item).setOnClickListener {
-            Toast.makeText(this, "Open conversation with SASA", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, Community5Activity::class.java))
         }
     }
 }

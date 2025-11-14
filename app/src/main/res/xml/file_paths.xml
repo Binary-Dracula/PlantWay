@@ -3,6 +3,9 @@
     <external-files-path
         name="plant_images"
         path="/" />
+    <external-files-path
+        name="community_images"
+        path="community_images/" />
     <external-path
         name="external_files"
         path="." />
