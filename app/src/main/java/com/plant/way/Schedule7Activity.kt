@@ -7,7 +7,6 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -25,6 +24,7 @@ class Schedule7Activity : AppCompatActivity() {
     private val plantTasks = mutableListOf<PlantTask>()
     private var currentPlantId: Int = -1
     private var currentPlant: PlantItem? = null
+    private lateinit var deleteConfirmationHelper: DeleteConfirmationHelper
     
     companion object {
         const val EXTRA_PLANT_ID = "extra_plant_id"
@@ -55,6 +55,9 @@ class Schedule7Activity : AppCompatActivity() {
         loadPlantTasks()
         setupRecyclerView()
         setupMenuListeners()
+        
+        // Initialize delete confirmation helper
+        deleteConfirmationHelper = DeleteConfirmationHelper(findViewById(android.R.id.content))
     }
     
     private fun setupViews() {
@@ -171,20 +174,18 @@ class Schedule7Activity : AppCompatActivity() {
             TaskType.REPOTTING -> "Repotting"
         }
         
-        AlertDialog.Builder(this)
-            .setTitle("Delete Task")
-            .setMessage("Are you sure you want to delete this $taskTypeName task (${task.taskDate})?")
-            .setPositiveButton("Confirm") { dialog, _ ->
+        deleteConfirmationHelper.show(
+            title = "Delete Task",
+            message = "Are you sure you want to delete this $taskTypeName task?",
+            onConfirm = {
                 // 确认删除
                 PlantDataManager.removeTask(currentPlantId, task.id)
                 adapter.removeTask(task)
                 Toast.makeText(this, "Task deleted successfully", Toast.LENGTH_SHORT).show()
-                dialog.dismiss()
+            },
+            onCancel = {
+                // 取消 - 可选的回调
             }
-            .setNegativeButton("Cancel") { dialog, _ ->
-                // 取消
-                dialog.dismiss()
-            }
-            .show()
+        )
     }
 }

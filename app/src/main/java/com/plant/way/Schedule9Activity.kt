@@ -3,7 +3,6 @@ package com.plant.way
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -12,6 +11,7 @@ class Schedule9Activity : AppCompatActivity() {
     
     private lateinit var plantAdapter: PlantAdapter
     private lateinit var rvPlantsList: RecyclerView
+    private lateinit var deleteConfirmationHelper: DeleteConfirmationHelper
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,6 +19,9 @@ class Schedule9Activity : AppCompatActivity() {
         
         setupViews()
         setupRecyclerView()
+        
+        // Initialize delete confirmation helper
+        deleteConfirmationHelper = DeleteConfirmationHelper(findViewById(android.R.id.content))
     }
     
     override fun onResume() {
@@ -84,19 +87,17 @@ class Schedule9Activity : AppCompatActivity() {
     }
     
     private fun showDeleteConfirmDialog(plant: PlantItem) {
-        AlertDialog.Builder(this)
-            .setTitle("Delete Plant")
-            .setMessage("Are you sure you want to delete ${plant.name}? This will also delete all associated tasks.")
-            .setPositiveButton("Confirm") { dialog, _ ->
+        deleteConfirmationHelper.show(
+            title = "Delete Plant",
+            message = "Are you sure you want to delete ${plant.name}? This will also delete all associated tasks.",
+            onConfirm = {
                 // 确认删除
                 PlantDataManager.removePlant(plant.id)
                 refreshPlantList()
-                dialog.dismiss()
+            },
+            onCancel = {
+                // 取消 - 可选的回调
             }
-            .setNegativeButton("Cancel") { dialog, _ ->
-                // 取消
-                dialog.dismiss()
-            }
-            .show()
+        )
     }
 }
