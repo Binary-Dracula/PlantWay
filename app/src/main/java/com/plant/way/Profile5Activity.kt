@@ -24,7 +24,7 @@ class Profile5Activity : AppCompatActivity() {
         
         // Add button click listener - navigate to Community2Activity
         findViewById<ImageView>(R.id.iv_add).setOnClickListener {
-            startActivity(Intent(this, Community2Activity::class.java))
+//            startActivity(Intent(this, Community2Activity::class.java))
         }
         
         // Message item click listener - navigate to Community5Activity

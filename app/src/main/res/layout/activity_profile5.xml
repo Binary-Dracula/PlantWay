@@ -10,8 +10,8 @@
         android:id="@+id/ll_top_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center_vertical"
+        android:orientation="horizontal"
         android:padding="8dp">
 
         <!-- Back Button -->
@@ -19,11 +19,11 @@
             android:id="@+id/iv_back"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/ic_back"
-            android:padding="12dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
             android:clickable="true"
             android:focusable="true"
-            android:background="?android:attr/selectableItemBackgroundBorderless" />
+            android:padding="12dp"
+            android:src="@drawable/ic_back" />
 
         <View
             android:layout_width="0dp"
@@ -35,11 +35,12 @@
             android:id="@+id/iv_add"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/ic_add"
-            android:padding="12dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
             android:clickable="true"
             android:focusable="true"
-            android:background="?android:attr/selectableItemBackgroundBorderless" />
+            android:padding="12dp"
+            android:src="@drawable/ic_add"
+            android:visibility="invisible" />
 
     </LinearLayout>
 
@@ -48,8 +49,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/ll_top_bar"
-        android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp">
 
         <LinearLayout
@@ -62,22 +63,22 @@
                 android:id="@+id/ll_message_item"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:padding="16dp"
                 android:background="@drawable/profile5_item_bg"
                 android:clickable="true"
-                android:focusable="true">
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
 
                 <!-- Avatar -->
                 <ImageView
                     android:id="@+id/iv_avatar"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:src="@drawable/avatar_sasa"
-                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="12dp"
                     android:background="@drawable/circle_background"
-                    android:layout_marginEnd="12dp" />
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/avatar_sasa" />
 
                 <!-- Message Content -->
                 <LinearLayout
@@ -90,19 +91,19 @@
                         android:id="@+id/tv_sender_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
                         android:text="@string/profile5_message_sender"
-                        android:textSize="16sp"
                         android:textColor="#333333"
-                        android:textStyle="bold"
-                        android:layout_marginBottom="4dp" />
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tv_message_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/profile5_message_text"
-                        android:textSize="14sp"
-                        android:textColor="#999999" />
+                        android:textColor="#999999"
+                        android:textSize="14sp" />
 
                 </LinearLayout>
 
@@ -111,10 +112,10 @@
                     android:id="@+id/tv_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
                     android:text="@string/profile5_message_date"
-                    android:textSize="12sp"
                     android:textColor="#CCCCCC"
-                    android:layout_marginStart="8dp" />
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
